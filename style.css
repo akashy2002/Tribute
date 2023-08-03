@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* padding: 50px 50px; */
+}
+
+.akash {
+    font-size: 20px;
+    font-style: italic;
+    color: gray;
+    border-bottom: 2px solid white;
+    width: 19%;
+}
+
+.bold {
+    color: white;
+}
+
+.container {
+    color: white;
+    background: black;
+    min-height: 100vh;
+    border: 5px solid yellow;
+    border-radius: 10px;
+}
+
+.top_section {
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.content {
+    max-width: 900px;
+    margin: 0px auto;
+}
+
+.top_section h1 {
+    border-bottom: 1px solid white;
+    font-weight: bold;
+    font-family: cursive;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.top_section h4 {
+    font-size: 25px;
+    text-align: end;
+    font-family: cursive;
+}
+
+.img_container {
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.img_container img {
+    width: 300px;
+    height: 280px;
+}
+
+.about_section {
+    margin-top: 50px;
+}
+
+.about_section h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-family: cursive;
+    text-transform: uppercase;
+}
+
+.about_section p {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    font-family: cursive;
+    padding: 0px 35px;
+}
+
+.bio_section {
+    margin-top: 50px;
+}
+
+.bio_section h2 {
+    margin-bottom: 30px;
+    font-family: cursive;
+}
+
+.bio_section ul li {
+    font-size: 20px;
+    font-family: cursive;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    margin: 10px 5px;
+}
+
+.last_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.last_section p {
+    font-size: 16px;
+    font-family: cursive;
+
+}
+
+
+@media screen and (max-width:1000px) {
+    .top_section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .about_section {
+        text-align: center;
+    }
+
+    .bio_section {
+        text-align: center;
+    }
+
+    .akash {
+        width: 24%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .last_section {
+        flex-direction: column;
+    }
+
+    .img_container img {
+        width: 12rem;
+    }
+
+    .akash {
+        width: 35%;
+    }
+}
